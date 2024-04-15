@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Column Layout</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+  }
+  .first-column {
+    flex-basis: 40%; 
+    background-color: #f0f0f0;
+    padding: 50px;
+    margin: 20px; 
+  }
+  .second-column {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column; 
+    padding: 25px;
+    margin: 20px;
+  }
+  .second-column div {
+    flex-grow: 1; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 20px;
+   ;
+  }
+  .slider-container {
+   width: 80%;
+   margin: 0 auto;
+   padding: 20px 0;
+ }
+
+ .skill {
+   margin-bottom: 20px;
+   position: relative;
+   height: 30px;
+   background-color:whitesmoke;
+   border-radius: 15px;
+   overflow: hidden;
+ }
+
+ .skill-bar {
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 100%;
+   background-color:#0f2bb9e2;
+   border-radius: 10px;
+   transition: width 0.5s ease;
+   
+ }
+ .texcol{
+   color: #00a89ae2;
+ }
+
+ .skill-label {
+   position: absolute;
+   right: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 14px;
+   text-align: center;
+ }
+ footer {
+   text-align: center;
+   padding: 3px;
+   background-color: #0b27c6e2;
+   color: white;
+   height: 120px;
+ }
+ button{
+   background-color: #00a89ae2;
+ }
+ .email-icon::before {
+   content: '\1F4E7';
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="first-column">
+    <img src="./Screenshot_20230412_172434.jpg"width="200">
+    <p>Developer</p>
+    <p>Hydhrabad,IND</p>
+    <p><span>&#x1F4E7;</span>syam33579@gmail.com</p>
+    <p> &#9742; 9182346007</p>
+
+    <h2>SKILLS</h2>
+
+    <div class="slider-container">
+      <div class="skill">
+        <div class="skill-bar" style="width: 90%;"></div>
+        <span class="skill-label">java fullstack- 90%</span>
+      </div>
+    
+      <div class="skill">
+        <div class="skill-bar" style="width: 80%;"></div>
+        <span class="skill-label">Html- 80%</span>
+      </div>
+    
+      <div class="skill">
+        <div class="skill-bar" style="width: 75%;"></div>
+        <span class="skill-label">CSS- 75%</span>
+      </div>
+    
+      <div class="skill">
+         <p>media</p>
+        <div class="skill-bar" style="width: 50%;"></div>
+       
+        <span class="skill-label" text-align="center">MS Exel- 50%</span>
+      </div>
+    </div>
+
+    <h2>Languages</h2>
+
+    <div class="slider-container">
+      <div class="skill">
+        <div class="skill-bar" style="width: 100%;"></div>
+        <span class="skill-label">English</span>
+      </div>
+    
+      <div class="skill">
+        <div class="skill-bar" style="width:75%;"></div>
+        <span class="skill-label">Tamil</span>
+      </div>
+    
+      <div class="skill">
+        <div class="skill-bar" style="width: 50%;"></div>
+        <span class="skill-label">Kannada</span>
+      </div>
+   
+    </div>
+    
+  </div>
+  <div class="second-column">
+    <div>
+      <h2>Work Experience</h2>
+      <p>Front End Developer</p>
+      <p>march-2024<button>Current</button></p>
+      <p>Highly motivated B.Tech Mechanical Engineering graduate seeking an entry level position as a 
+        Software Engineer in a dynamic IT firm. Skilled in programming languages like C, Python with a 
+        strong foundation in database management and Data Structures. Eager to contribute my analytical 
+        and technical skills to the development of innovative software solutions while continuously updating 
+        my knowledge and fostering personal growth</p>
+      
+    </div>
+    <div>
+      <h2>Education</h2>
+      <h3>B.Tech</h3>
+         <p>dhanekula institute of Engineering</p>
+         <p>Mechanical Engineering <br>
+          2021-2023</p>
+         <hr>
+         <h3>diviseema polytechinic</h3>
+         <p>Mechanical Engineering</p>
+         <p>2017-2020</p>
+         <hr>
+         <h3>Schoole</h3>
+         <p>2016 - 2017</p>
+         <p>SSC</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+<p>find me on social media</p>
+<p>Powered bt w3schools</p>
+</footer>
+
+</body>
+</html>
