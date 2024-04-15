@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: whitesmoke;
+      }
+      nav {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+      .left,
+      .right {
+        font-size: 18px;
+      }
+      .center {
+        font-size: 24px;
+      }
+      .row {
+        display: flex;
+      }
+      .column {
+        flex: "25%";
+        padding: 5px;
+        justify-content: center;
+      }
+
+      .linein {
+        display: inline;
+      }
+
+      .foo {
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <span>&#9776;</span>
+        </div>
+        <div class="center">MyFood</div>
+        <div class="right">Mail</div>
+      </nav>
+    </header>
+
+    <div class="row">
+      <div class="column">
+        <figure>
+          <img src="./cherries.jpg"height="400px" />
+          <figcaption>
+            <p>The Perfect Sandwich, A Real NYC Classic</p>
+            <p>
+              Just some random text, lorem ipsum text praesent tincidunt ipsum
+              lipsum.
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="column">
+        <figure>
+          <img src="./sandwich.jpg" height="400px" />
+          <figcaption>
+            <p>Let Me Tell You About This Steak</p>
+            <p>
+              Once again, some random text to lorem lorem lorem lorem ipsum text
+              praesent tincidunt ipsum lipsum.
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="column">
+        <figure>
+          <img src="./steak.jpg" height="400px"/>
+          <figcaption>
+            <p>Cherries, interrupted</p>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            <p>What else?</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="column">
+        <figure>
+          <img src="./wine.jpg" height="400px"/>
+          <figcaption>
+            <p>Once Again, Robust Wine and Vegetable Pasta</p>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <figure>
+          <img src="/popsicle.jpg" height="400px"/>
+          <figcaption>
+            <p>All I Need Is a Popsicle</p>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="column">
+        <figure>
+          <img src="./salmon.jpg"  height="400px" />
+          <figcaption>
+            <p>Salmon For Your Skin</p>
+            <p>
+              Once again, some random text to lorem lorem lorem lorem ipsum text
+              praesent tincidunt ipsum lipsum.
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="column">
+        <figure>
+          <img src="./croissant.jpg" height="400px"/>
+          <figcaption>
+            <p>The Perfect Sandwich, A Real Classic</p>
+            <p>
+              Just some random text, lorem ipsum text praesent tincidunt ipsum
+              lipsum.
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="column">
+        <figure>
+          <img src="./croissant.jpg" height="400px" />
+          <figcaption>
+            <p>Le French</p>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <center>
+      <button><<</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>>></button>
+    </center>
+    <hr />
+    <center>
+      <h2>About Me, The food Man</h2>
+      <img src="./syam.jpg"width="400" />
+    </center>
+    <center>
+      <h1>I am Who I Am!</h1>
+      <h3>with Passion For Real. Good Food</h3>
+      <p>
+        Just me, myself and I, exploring the universe of unknownment. I have a
+        heart of love and an interest of lorem ipsum and mauris neque quam blog.
+        I want to share my world with you. Praesent tincidunt sed tellus ut
+        rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+        congue gravida diam non fringilla. Praesent tincidunt sed tellus ut
+        rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+        congue gravida diam non fringilla.
+      </p>
+    </center>
+
+    <footer class="foo">
+      <div class="row">
+        <div class="column">
+          <h2>FOOTER</h2>
+          <p>Praesent tincidunt sed tellus ut rutrum.</p>
+          <p>
+            Sed vitae justo condimentum, porta lectus vitae, ultricies congue
+            gravida diam non fringilla.
+          </p>
+          <p>Powered by <a href="https://www.w3schools.com">w3.css</a></p>
+        </div>
+     
+        </div>
+        <center>
+          <div class="column">
+            <h2>POPULAR TAGS</h2>
+            <center>
+              <button>Travel</button>
+              <button>New York</button>
+              <button>Dinner</button><br />
+  
+              <button>Salmon</button>
+              <button>France</button>
+              <button>Drinks</button><br />
+              <button>Ideas</button>
+              <button>flavors</button>
+              <button>Cuisine</button><br />
+              <button>Chicken</button>
+              <button>Dressing</button>
+              <button>Fried</button><br />
+              <button>Fish</button>
+              <button>DUCK</button>
+            </center>
+          </div>
+        </center>
+      </div>
+    </footer>
+  </body>
+</html>
